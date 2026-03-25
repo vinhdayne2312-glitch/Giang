@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chúc mừng sinh nhật Giang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      color: #333;
+      padding: 50px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+    h1 {
+      color: #ff4d6d;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #e63950;
+    }
+  </style>
+</head>
+<body>  <div class="card">
+    <h1>🎉 Chúc mừng sinh nhật Giang 🎂</h1>
+    <p>Chúc bạn Giang luôn vui vẻ, hạnh phúc và đạt được nhiều thành công trong cuộc sống!</p>
+    <p>Hy vọng tuổi mới sẽ mang đến cho bạn thật nhiều niềm vui và kỷ niệm đẹp 💖</p><button onclick="showMessage()">Bấm vào đây 🎁</button>
+
+<p id="message"></p>
+
+  </div>  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML = "🎈 Bạn là người tuyệt vời nhất! Sinh nhật thật rực rỡ nhé! 🎉";
+    }
+  </script>  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mpeg">
+  </audio>  <script>
+    const music = document.getElementById("bg-music");
+    document.body.addEventListener("click", () => {
+      music.play();
+    }, { once: true });
+  </script></body>
+</html>
